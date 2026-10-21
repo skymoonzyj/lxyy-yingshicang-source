@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="洛雪点播影视仓电视版独立订阅地址与导入说明。">
+<title>洛雪点播 · 影视仓订阅</title>
+<style>
+:root{color-scheme:dark;font:17px/1.7 system-ui,sans-serif;background:#101820;color:#eef5fa}body{max-width:760px;margin:8vh auto;padding:24px}small{color:#8fdacb;letter-spacing:.06em}h1{font-size:clamp(30px,6vw,44px);line-height:1.2;margin:20px 0}p,li{color:#c4d1da}section{margin:32px 0;padding:24px;border:1px solid #334451;border-radius:16px;background:#17232d}label{display:block;font-weight:600}input{box-sizing:border-box;width:100%;padding:14px;margin:12px 0;font:14px/1.5 ui-monospace,monospace;border:1px solid #576d7e;border-radius:8px;background:#0d141b;color:white}button{font:inherit;font-weight:600;padding:10px 20px;border:0;border-radius:8px;background:#93e5cb;color:#10231f;cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #a8e9ff;outline-offset:3px}a{color:#a8e9ff;overflow-wrap:anywhere}footer{font-size:14px;color:#90a2af}#status{display:inline-block;margin-left:12px;color:#a9ebd4}
+</style>
+<small>电视点播 · 独立订阅</small>
+<h1>洛雪点播 · 影视仓</h1>
+<p>为影视仓电视版单独制作的 JSON 配置与 Android 采集器。电视直接连接原站，Mac 关机后也可使用。</p>
+<section>
+<label for="subscription">在影视仓中添加这个配置地址</label>
+<input id="subscription" readonly value="https://skymoonzyj.github.io/lxyy-yingshicang-source/tvbox.json" aria-label="影视仓 JSON 订阅地址">
+<button id="copy" type="button">复制订阅地址</button><span id="status" role="status" aria-live="polite"></span>
+<p><a href="./tvbox.json">打开 JSON 配置</a> · <a href="./lxyy-1.0.0.jar">下载采集器 JAR</a> · <a href="./version.json">版本与校验值</a></p>
+</section>
+<ol>
+<li>在影视仓的设置中找到配置地址；也可使用 App 提供的手机推送入口。</li>
+<li>粘贴上方完整地址并保存，等待配置与采集器下载。</li>
+<li>进入“洛雪点播”，查看电影、电视剧分类，或搜索片名。</li>
+</ol>
+<p>目标客户端：影视仓 5.0.8。最低运行环境：Android 5.0（API 21）。电视到原站及媒体地址的网络需可用；具体设备效果以导入后测试为准。</p>
+<footer>此地址与原 MiraPlay 订阅独立。源数据来自 tv.lxyy.club 的公开点播接口。此站只托管配置与采集器，不托管影视媒体。</footer>
+<script>
+document.querySelector('#copy').addEventListener('click',async()=>{const el=document.querySelector('#subscription');try{await navigator.clipboard.writeText(el.value);document.querySelector('#status').textContent='已复制';}catch{el.focus();el.select();document.querySelector('#status').textContent='请长按或使用系统复制';}});
+</script>
+</html>

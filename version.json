@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "min_android_api": 21,
+  "jar": "lxyy-1.0.0.jar",
+  "bytes": 18827,
+  "md5": "ea90e6a6ce58b4c37c7f36cbd71da615",
+  "sha256": "3c4e3043a115368ada6e7ba236da52ca93d72654a6abfe272d9510cc29e64565",
+  "classes": [
+    "Lcom/github/catvod/spider/Init;",
+    "Lcom/github/catvod/spider/JsonHttp$1;",
+    "Lcom/github/catvod/spider/LxyyCore$Requester;",
+    "Lcom/github/catvod/spider/LxyyCore$TimedRequester;",
+    "Lcom/github/catvod/spider/JsonHttp;",
+    "Lcom/github/catvod/spider/Lxyy;",
+    "Lcom/github/catvod/spider/LxyyCore$1;",
+    "Lcom/github/catvod/spider/LxyyCore$2;",
+    "Lcom/github/catvod/spider/LxyyCore$Batch;",
+    "Lcom/github/catvod/spider/LxyyCore$DetailResult;",
+    "Lcom/github/catvod/spider/LxyyCore$Line;",
+    "Lcom/github/catvod/spider/LxyyCore;"
+  ],
+  "subscription": "https://skymoonzyj.github.io/lxyy-yingshicang-source/tvbox.json"
+}

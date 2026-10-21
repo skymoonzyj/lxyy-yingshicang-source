@@ -1,0 +1,18 @@
+{
+  "spider": "https://skymoonzyj.github.io/lxyy-yingshicang-source/lxyy-1.0.0.jar;md5;ea90e6a6ce58b4c37c7f36cbd71da615",
+  "sites": [
+    {
+      "key": "lxyy_yingshicang",
+      "name": "洛雪点播",
+      "type": 3,
+      "api": "csp_Lxyy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": ""
+    }
+  ],
+  "parses": [],
+  "flags": [],
+  "lives": []
+}
